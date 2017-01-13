@@ -5,7 +5,7 @@
 Kispiox - A lightweight application framework
 www.bueller.ca/kispiox
 
-public/demo/index.html
+private/views/default.html
 @copyright Copyright (c) 2016 Matt Ferris
 @author Matt Ferris <matt@bueller.ca>
 
@@ -14,22 +14,24 @@ www.bueller.ca/kispiox/license
 
 -->
 
-<html lang="en>
+<html lang="en">
   <head>
     <meta content-type="utf-8">
     <title>Welcome to Kispiox!</title>
-    <style type="text/css">
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="public/assets/css/main.css">
   </head>
   <body>
-    <header>
-      <h1>Welcome to Kispiox!</h1>
-    </header>
-    <section id="main-section">
-      <p>Kispiox appears to be working fine.</p>
-    </section>
-    <footer>
-    </footer>
+    <div class="container">
+      <div class="content">
+        <header>
+          <div id="logotype"><img src="public/assets/images/kispiox-logo.png"></div>
+        </header>
+        <section id="main-section">
+          <h1>Welcome to Kispiox!</h1>
+        </section>
+        <footer>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
