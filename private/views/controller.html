@@ -1,0 +1,61 @@
+<!doctype html>
+
+<!--
+
+Kispiox - A lightweight application framework
+www.bueller.ca/kispiox
+
+private/views/default.html
+@copyright Copyright (c) 2016 Matt Ferris
+@author Matt Ferris <matt@bueller.ca>
+
+Licensed under BSD 2-clause license
+www.bueller.ca/kispiox/license
+
+-->
+
+<html lang="en">
+  <head>
+    <meta content-type="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <title>Your First Controller - Kispiox</title>
+    <link rel="stylesheet" type="text/css" href="public/assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="logotype"><img src="public/assets/images/kispiox-logo.png"></div>
+      </header>
+      <article class="content">
+        <h1>Your First Controller</h1>
+        <p>
+          Create the folder structure for you application by running
+          <code># mkdir -p src/NameSpace/Application</code>. Create a
+          subdirectory within this new structure called <i>Controllers</i>
+          (<code> # mkdir src/NameSpace/Application/Controllers</code>). This is
+          the directory that will house all your controllers.
+        </p>
+        <p>Now, create a new, empty controller.</p>
+        <div class="codeblock">
+          <p>src/NameSpace/Application/Controllers/DefaultController.php</p>
+            <pre>&lt;?php
+
+namespace NameSpace\Application\Controllers;
+
+use Kispiox\Controller;
+
+class DefaultController extends Controller
+{
+}
+</pre>
+        </div>
+      </article>
+      <footer>
+        <ul>
+          <li><a class="button" href="?p=/">&lsaquo; Back</a></li>
+          <li><a class="button solid" href="?p=/controller">Next &rsaquo;</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -12,13 +12,21 @@
  *
  */
 
+html, body, div, h1, h2, h3, ul, li, p, a, pre {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
 
 body {
+    background-color: #fff;
     display: table;
     font-family: 'open sans', 'helvetica', 'arial', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -33,9 +41,112 @@ body {
 
 .content {
     display: inline-block;
-    width: 720px;
+    margin: 125px 0 85px 0;
+    overflow: scroll;
+}
+
+@media(min-width: 721px) {
+    .content {
+        width: 720px;
+    }
+}
+
+@media(max-width: 720px) {
+    img {
+        width: 50%;
+    }
+    .content {
+        width: 95%;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 300;
 }
 
 h1 {
-    font-weight: 300;
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.5em;
+    margin-top: 20px;
+    text-align: left;
+}
+
+pre, code {
+    background-color: #fff;
+    border: solid #00bff3 1px;
+    color: #008cf3;
+    font-size: 0.8em;
+}
+
+code {
+    border-left: solid #00bff3 5px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+    white-space: nowrap;
+}
+
+.codeblock {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.codeblock p {
+    background-color: #00bff3;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.codeblock pre {
+    border-radius: 0 0 5px 5px;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+a.button {
+    border: solid #00bff3 1px;
+    border-radius: 5px;
+    color: #008fc3;
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a.button.solid {
+    background-color: #00bff3;
+    color: #fff;
+    font-weight: 400;
+}
+
+.container > header, 
+.container > footer {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.container > header {
+    top: 0;
+}
+
+.container > footer {
+    border-top: solid #00bff3 1px;
+    bottom: 0;
+    text-align: right;
+}
+
+.container > footer > ul {
+    padding: 20px;
+}
+
+.container > footer > ul > li {
+    display: inline-block;
+    padding-left: 10px;
 }

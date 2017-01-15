@@ -1,0 +1,79 @@
+<!doctype html>
+
+<!--
+
+Kispiox - A lightweight application framework
+www.bueller.ca/kispiox
+
+private/views/default.html
+@copyright Copyright (c) 2016 Matt Ferris
+@author Matt Ferris <matt@bueller.ca>
+
+Licensed under BSD 2-clause license
+www.bueller.ca/kispiox/license
+
+-->
+
+<html lang="en">
+  <head>
+    <meta content-type="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Namespace Setup - Kispiox</title>
+    <link rel="stylesheet" type="text/css" href="public/assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="logotype"><img src="public/assets/images/kispiox-logo.png"></div>
+      </header>
+      <article class="content">
+        <h1>Namespace Setup</h1>
+        <p>
+          Pick a namespace for your application. You can choose from common
+          conventions such as <i>VendorName\AppName</i>, or domain
+          notation such as <i>com\example\app_name</i>.
+        </p>
+        <p>
+          Once you've chosen a namespace, you'll need to update
+         <i>composer.json</i>.
+        </p>
+        <div class="codeblock">
+          <p>composer.json</p>
+            <pre>{
+    "name": "vendor/package",
+    "description": "A description of you application",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.ca"
+        }
+    ]
+    "autoload": {
+        "psr-4": {
+            "NameSpace\\Application\\": "src/NameSpace/Application",
+            "Kispiox\\Welcome\\": "src/Kispiox/Welcome/"
+        }
+    },
+    "require": {
+        "kispiox/kispiox": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "license": "BSD-2-Clause",
+}</pre>
+        </div>
+        <p>
+          Then you'll need to run <code># composer update</code> to update the
+          composer autoloader with the new information.
+        </p>
+      </article>
+      <footer>
+        <ul>
+          <li><a class="button" href="?p=/">&lsaquo; Back</a></li>
+          <li><a class="button solid" href="?p=/controller">Next &rsaquo;</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

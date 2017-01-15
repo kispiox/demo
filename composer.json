@@ -1,9 +1,15 @@
 {
-    "name": "kispiox/demo",
-    "description": "A demo package for the Kispiox web framework",
+    "name": "kispiox/welcome",
+    "description": "A welcome package for the Kispiox web framework",
+    "authors": [
+        {
+            "name": "Matt Ferris",
+            "email": "matt@bueller.ca"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Kispiox\\Demo\\": "src/"
+            "Kispiox\\Welcome\\": "src/Kispiox/Welcome/"
         }
     },
     "require": {
@@ -12,11 +18,5 @@
     "require-dev": {
         "phpunit/phpunit": "^5.7"
     },
-    "license": "BSD-2-Clause",
-    "authors": [
-        {
-            "name": "Matt Ferris",
-            "email": "matt@bueller.ca"
-        }
-    ]
+    "license": "BSD-2-Clause"
 }

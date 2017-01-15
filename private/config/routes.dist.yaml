@@ -34,4 +34,18 @@
 
 routes:
 
-    default: { path: '/', method: 'GET', action: '\Kispiox\Demo\DemoController:defaultAction' }
+    namespace:
+        path: '/namespace'
+        method: 'GET'
+        action: '\Kispiox\Welcome\WelcomeController:namespaceAction'
+
+    controller:
+        path: '/controller'
+        method: 'GET'
+        action: '\Kispiox\Welcome\WelcomeController:controllerAction'
+
+    default:
+        path: '/'
+        method: 'GET'
+        action: '\Kispiox\Welcome\WelcomeController:defaultAction'
+
